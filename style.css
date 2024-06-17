@@ -72,6 +72,10 @@ body{
     margin-right: 60px;
     margin-bottom: 20px;
 }
+
+h1 {
+    font-weight: 300;
+}
 .time-interval{
     padding: 16px 24px;
 }
@@ -115,7 +119,7 @@ button.active {
     color: #fff;
     padding: 16px;
     position: relative;
-    margin-top: 14px;
+    margin-top: 35px;
 }
 .card-item .nav{
     display: flex;
@@ -127,47 +131,61 @@ button.active {
 }
 
 .card-item .current{
-    font-size: 40px;
-    margin-top: 8px;
+    font-size: 48px;
+    margin-top: 24px;
     margin-bottom: 8px;
 }
 .card-item .previous{
     color: var(--Pale-Blue);
 }
 
-.card-item::after{
+.card-item::before{
     content: '';
     height: 100%;
     width: 100%;
     display: block;
     position: absolute;
-    top: -20px;
+    top: -35px;
     left: 0;
     z-index: -1;
     border-radius: 10px;
 }
-/* .card-item:hover::after{
-    top: -30px;
-} */
 
-.card-item:nth-child(1)::after{
+.card-item:nth-child(1)::before{
     background-color: var(--Light-red);
-    /* background-image: url(images/icon-work.svg); */
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url(images/icon-work.svg);
 }
-.card-item:nth-child(2)::after{
+.card-item:nth-child(2)::before{
     background-color: var(--Soft-blue);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url(images/icon-play.svg);
 }
-.card-item:nth-child(3)::after{
+.card-item:nth-child(3)::before{
     background-color: var(--Light-red2);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url(images/icon-study.svg);
 }
-.card-item:nth-child(4)::after{
+.card-item:nth-child(4)::before{
     background-color: var(--Lime-green);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url(images/icon-exercise.svg);
 }
-.card-item:nth-child(5)::after{
+.card-item:nth-child(5)::before{
     background-color: var(--Violet);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url(images/icon-social.svg);
 }
-.card-item:nth-child(6)::after{
+.card-item:nth-child(6)::before{
     background-color: var(--Soft-orange);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-image: url(images/icon-self-care.svg);
 }
 
 button {
@@ -180,8 +198,6 @@ button {
     cursor: pointer;
 }
 
-
-
 @media(max-width: 680px) {
     .container{
         flex-direction: column;
@@ -189,7 +205,45 @@ button {
     .sidebar{
         margin-bottom: 24px;
     }
+
+    .reports-text{
+        font-size: 12px;
+    }
+
+    .profile{
+        display: flex;
+        padding-bottom: 0px;
+    }
+
+    .info {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .name {
+        font-size: 24px;
+        display: contents;
+    }
+
+    .time-interval{
+        display: ruby-text;
+    }
+
     .cards{
         margin-left: 0;
     }
+
+    .part {
+        display: flex;
+    }
+
+    .card-item .current {
+        font-size: 32px;
+        margin-right: 40px;
+    }
+    .card-item .previous {
+        margin-left: 40px;
+        margin-top: 35px;
+    }
+
 }

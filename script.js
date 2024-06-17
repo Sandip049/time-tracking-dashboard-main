@@ -56,8 +56,8 @@ function updateContent(period) {
         work1.textContent = '32hrs';
         work2.textContent = 'Last week - 36hrs';
 
-        play1.textContent = '20hrs';
-        play2.textContent = 'Last week - 15hrs';
+        play1.textContent = '10hrs';
+        play2.textContent = 'Last week - 8hrs';
 
         study1.textContent = '4hrs';
         study2.textContent = 'Last week - 7hrs';
