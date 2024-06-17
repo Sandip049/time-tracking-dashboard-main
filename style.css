@@ -121,6 +121,12 @@ button.active {
     position: relative;
     margin-top: 35px;
 }
+
+.card-item:hover{
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
 .card-item .nav{
     display: flex;
     justify-content: space-between;
